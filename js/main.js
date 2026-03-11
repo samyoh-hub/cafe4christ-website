@@ -69,6 +69,44 @@
   });
 })();
 
+/* ---- Contact form — Formspree AJAX submission ---- */
+(function () {
+  const form    = document.getElementById('contact-form');
+  const submit  = document.getElementById('contact-submit');
+  const note    = document.getElementById('form-note');
+  const success = document.getElementById('form-success');
+  const error   = document.getElementById('form-error');
+  if (!form) return;
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    submit.disabled = true;
+    submit.textContent = 'Sending…';
+    error.hidden = true;
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+
+      if (res.ok) {
+        form.reset();
+        if (note)    note.hidden    = true;
+        success.hidden = false;
+        submit.hidden  = true;
+      } else {
+        throw new Error('non-ok response');
+      }
+    } catch (_) {
+      error.hidden   = false;
+      submit.disabled   = false;
+      submit.textContent = 'Send Message';
+    }
+  });
+})();
+
 /* ---- Smooth scroll for in-page anchor links ---- */
 (function () {
   const navH = parseInt(

@@ -35,7 +35,7 @@
       <div class="hero-text-inner">
         <p class="eyebrow">Saitama, Japan</p>
         <h1>A coffee shop and a church.<br>Same space. Same city.</h1>
-        <p class="hero-sub">Japan's churches are small and aging. Most people here have never stepped inside one. A café lowers that barrier — and we're building one in Saitama.</p>
+        <p class="hero-sub">Most people in Saitama have never stepped inside a church. A café lowers that first barrier — meeting people where they already are, alongside the faithful community already here.</p>
         <div class="hero-actions">
           <a href="#the-cafe" class="btn btn-amber btn-lg">Visit the Café</a>
           <a href="#why-it-works" class="btn btn-ghost btn-lg">How It Works</a>
@@ -66,7 +66,7 @@
         <span class="section-label">About Basilea</span>
         <h2 id="about-heading">We coordinate. We don't do it all.</h2>
         <p>Basilea Community Solutions brings together a café operator, a pastoral team, and an oversight structure — and makes sure each one can do their job without carrying someone else's.</p>
-        <p>Most attempts at this model struggle because one person tries to run the café and lead the church. We build in that separation from day one. The café runs like a café. The church is led like a church.</p>
+        <p>We build in role separation from day one — a dedicated café operator and a pastoral team each focused on what they do best. The café runs like a café. The church is led like a church.</p>
         <p>Saitama is where this starts.</p>
       </div>
     </div>
@@ -111,7 +111,7 @@
     <div class="model-inner">
       <div class="model-header">
         <span class="section-label">Why Coffee Shops Work for Churches in Japan</span>
-        <h2 id="model-heading">Three things this model solves</h2>
+        <h2 id="model-heading">Three things this model addresses</h2>
       </div>
       <div class="model-blocks">
 
@@ -126,7 +126,7 @@
         <div class="model-block">
           <span class="model-num">Facility costs</span>
           <h3>The rent becomes manageable</h3>
-          <p>The average Japanese church has 35 members. Paying for a space that sits empty six days a week is hard to sustain.</p>
+          <p>The average Japanese church has 35 members — faithful communities carrying real costs. Paying for a space that sits empty six days a week is a structural challenge.</p>
           <p>A shared-space model changes that. The café runs five to six days a week and covers most of the lease. The church uses the same space and pays its share — documented as roughly a 6-to-1 split by actual use.<sup><a href="#ref-8" class="ref-link">[8]</a></sup></p>
           <p>The church doesn't fund the café. The café makes the space viable for both.</p>
         </div>
@@ -134,8 +134,8 @@
         <div class="model-block">
           <span class="model-num">Pastoral capacity</span>
           <h3>The pastor stays a pastor</h3>
-          <p>Running a café is a full-time job. Leading a church is a full-time job. One person doing both will eventually lose one of them — and usually it's the church.</p>
-          <p>Exponential documented this clearly: café operations are relentless and unsustainable for a pastor to absorb.<sup><a href="#ref-8" class="ref-link">[8]</a></sup></p>
+          <p>Running a café is a full-time job. Leading a church is a full-time job. The goal is to protect both — and that means dedicated support for each role.</p>
+          <p>Exponential documented this clearly: café operations need their own dedicated support to sustain well.<sup><a href="#ref-8" class="ref-link">[8]</a></sup></p>
           <div class="model-roles">
             <p><strong>The pastor</strong> preaches, disciples, and cares for people.</p>
             <p><strong>The operator</strong> runs the café with independent support.</p>
@@ -171,7 +171,7 @@
                 alt="Busy street in a Japanese city at dusk"
                 loading="lazy"
               />
-              <p>71% of people in Japan have no personal religion and no family religion.<sup><a href="#ref-1" class="ref-link">[1]</a></sup> Christians are roughly 1% of the population.<sup><a href="#ref-2" class="ref-link">[2]</a></sup> A direct, institution-first approach to faith doesn't travel far here. A café does.</p>
+              <p>71% of people in Japan have no personal religion and no family religion.<sup><a href="#ref-1" class="ref-link">[1]</a></sup> Christians are roughly 1% of the population.<sup><a href="#ref-2" class="ref-link">[2]</a></sup> Churches and missionaries have faithfully served Japan for generations. A café is one more way to open a door — meeting people in a space they already feel at home in.</p>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@
                 alt="Small group of people gathered together in a quiet space"
                 loading="lazy"
               />
-              <p>81% of Protestant churches in Japan have fewer than 50 members.<sup><a href="#ref-5" class="ref-link">[5]</a></sup> 89% of pastors are over 50. The average congregation is about 35 people.<sup><a href="#ref-3" class="ref-link">[3]</a></sup><sup><a href="#ref-4" class="ref-link">[4]</a></sup> These are small, stretched communities. A shared space changes what's possible for them.</p>
+              <p>81% of Protestant churches in Japan have fewer than 50 members.<sup><a href="#ref-5" class="ref-link">[5]</a></sup> 89% of pastors are over 50. The average congregation is about 35 people.<sup><a href="#ref-3" class="ref-link">[3]</a></sup><sup><a href="#ref-4" class="ref-link">[4]</a></sup> These are faithful communities doing significant work with limited resources. A shared space is one way to expand what's possible alongside them.</p>
             </div>
           </div>
         </div>
@@ -350,7 +350,8 @@
         <p>Questions, partnerships, volunteer interest, or media — use the form or email us directly.</p>
         <p>Email: <a href="mailto:hello@cafe4christ.org" class="contact-email-link">hello@cafe4christ.org</a></p>
       </div>
-      <form class="contact-form" action="#" method="post" aria-label="Contact form">
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-label="Contact form">
+        <input type="hidden" name="_replyto" value="hello@cafe4christ.org" />
         <div class="form-row">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name" />
@@ -375,8 +376,10 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required placeholder="What's on your mind?"></textarea>
         </div>
-        <button type="submit" class="btn btn-amber">Send Message</button>
-        <p class="form-note">Goes to a real person, not an auto-responder.</p>
+        <button type="submit" class="btn btn-amber" id="contact-submit">Send Message</button>
+        <p class="form-note" id="form-note">Goes to a real person, not an auto-responder.</p>
+        <p class="form-success" id="form-success" hidden>Message sent — we'll be in touch soon.</p>
+        <p class="form-error" id="form-error" hidden>Something went wrong. Please email us directly at <a href="mailto:hello@cafe4christ.org">hello@cafe4christ.org</a>.</p>
       </form>
     </div>
   </section>
