@@ -107,6 +107,35 @@
   });
 })();
 
+/* ---- Give dropdown ---- */
+(function () {
+  const wrap     = document.getElementById('nav-give-wrap');
+  const btn      = document.getElementById('give-btn');
+  const dropdown = document.getElementById('give-dropdown');
+  if (!wrap || !btn || !dropdown) return;
+
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    dropdown.hidden = isOpen;
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!wrap.contains(e.target)) {
+      btn.setAttribute('aria-expanded', 'false');
+      dropdown.hidden = true;
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      btn.setAttribute('aria-expanded', 'false');
+      dropdown.hidden = true;
+    }
+  });
+})();
+
 /* ---- Smooth scroll for in-page anchor links ---- */
 (function () {
   const navH = parseInt(
