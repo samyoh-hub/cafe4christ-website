@@ -1030,6 +1030,78 @@ sup { line-height: 0; }
 .ref-link:hover { color: var(--navy); }
 
 /* ============================================================
+   SAMUEL OH CAMPAIGN BANNER
+   ============================================================ */
+.campaign-section {
+  background: var(--terracotta);
+  padding: 88px var(--pad-x);
+  text-align: center;
+}
+.campaign-inner {
+  max-width: 740px;
+  margin: 0 auto;
+}
+.campaign-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.22);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 100px;
+  margin-bottom: 22px;
+}
+.campaign-section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+.campaign-desc {
+  color: rgba(255,255,255,0.88);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin: 0 0 36px;
+}
+.btn-cream {
+  background: #fff;
+  color: var(--terracotta);
+  border-color: #fff;
+  font-weight: 600;
+}
+.btn-cream:hover {
+  background: var(--cream-mid);
+  border-color: var(--cream-mid);
+  color: var(--terracotta-hov);
+}
+
+/* Featured support card */
+.involved-card-featured {
+  border: 2px solid var(--terracotta);
+  position: relative;
+}
+.involved-card-featured::before {
+  content: "Most Urgent";
+  position: absolute;
+  top: -13px;
+  left: 24px;
+  background: var(--terracotta);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 100px;
+}
+
+/* ============================================================
    FAQ
    ============================================================ */
 .faq-section {
