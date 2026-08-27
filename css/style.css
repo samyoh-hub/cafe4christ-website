@@ -1185,6 +1185,82 @@ sup { line-height: 0; }
   margin-top: 4px;
 }
 
+.japan-map-wrap {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.japan-map {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+.jp-land {
+  fill: var(--cream-mid);
+  stroke: var(--navy);
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
+.jp-land-small { stroke-width: 3; }
+.jp-pin image { filter: drop-shadow(0 2px 3px rgba(59,76,93,0.35)); }
+.jp-pin text {
+  font-family: var(--font-sans);
+  font-size: 26px;
+  font-weight: 500;
+  fill: var(--navy);
+}
+.jp-pin-active text { font-weight: 700; }
+.jp-pin-status {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  fill: var(--terracotta);
+}
+.jp-leader {
+  stroke: var(--terracotta);
+  stroke-width: 2.5;
+}
+.jp-inset rect {
+  fill: var(--white);
+  stroke: var(--terracotta);
+  stroke-width: 2.5;
+}
+.jp-inset-title {
+  font-family: var(--font-sans);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  fill: var(--terracotta);
+}
+
+.map-legend {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.map-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-mid);
+}
+.map-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--navy);
+  display: inline-block;
+}
+.map-legend-dot-active {
+  background: var(--terracotta);
+  box-shadow: 0 0 0 3px var(--warning-bg), 0 0 0 4px var(--terracotta);
+}
+
 /* ============================================================
    FAQ
    ============================================================ */
